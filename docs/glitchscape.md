@@ -1,10 +1,4 @@
-### 2.6 Progression Design
-
-- **Non-linear World Selection**: Players can tackle worlds in various orders
-- **Soft Gating**: Certain areas require specific powers to access, suggesting an optimal path
-- **Retraversal Incentives**: New powers open previously inaccessible areas in completed worlds
-- **Difficulty Scaling**: Worlds have recommended order but adapt to player's current power level
-- **Ability Synergy**: Later worlds feature puzzles requiring creative combinations of powers# GLITCHSCAPE
+# GLITCHSCAPE
 ## Master Design Document v2.0
 
 ![Game Logo Placeholder]
@@ -29,27 +23,30 @@ Set inside a game engine managed by a benevolent AI, players control **Patch**, 
 
 ### 1.2 Key Characters
 
-#### PATCH (Protagonist)
+#### 1.2.1 PATCH (Protagonist)
 - **Visual Identity**: 32 × 48 px sprite, orange suit (#FF6A28), rounded helmet, broad gloves
 - **Visor**: #0D0D1A with two 6 × 6 px expressive eyes
 - **Personality**: Determined, analytical, helpful
 - **Origin**: Created by the AI as a subprocess designed to identify and repair code anomalies
 - **Core Ability**: Can absorb and repurpose glitch energy as specialized powers
 
-#### HACK (Antagonist)
+#### 1.2.2 HACK (Antagonist)
 - **Visual Identity**: 40 × 56 px sprite, purple suit (#9A33FF), angular shoulder "antennae", narrow red visor slits
 - **Personality**: Chaotic, corrupting, calculating
 - **Origin**: Unintended byproduct of Patch's creation - the "negative space" of the debugging process
 - **Core Ability**: Can corrupt game elements and warp reality, leaving trails of glitches
 - **Appearances**: Glimpsed as a shadowy, glitchy figure throughout early levels, always fleeing when Patch approaches
 
-#### THE SUPERVISOR (AI Overseer)
+#### 1.2.3 THE SUPERVISOR (AI Overseer)
 - **Visual Identity**: Appears as a clean, minimal holographic interface
-- **Personality**: Logical, concerned, somewhat limited by its programming
 - **Role**: Guides Patch through Backdoor Rooms, providing context and occasional assistance
-- **Connection**: Created both Patch and (inadvertently) Hack
+- **Complete History**: Originally a singular AI entity responsible for the Core Engine's development and maintenance
+- **Fragmentation**: When critical system failures began, the Supervisor attempted to create a repair protocol but fractured in the process
+- **True Nature**: The Supervisor, Patch, and Hack are actually fragments of the same original consciousness
+- **Internal Conflict**: Represents the logical, neutral portion while Patch embodies restorative functions and Hack embodies adaptive innovation
+- **Final Resolution**: Seeks to reunite all three aspects to create a more balanced, complete system
 
-#### WORLD GUARDIANS (Bosses)
+#### 1.2.4 WORLD GUARDIANS (Bosses)
 - Originally designed as protagonists or significant entities in their respective games
 - Corrupted by Hack into aggressive, glitched versions of themselves
 - Each embodies a unique Glitch Power that Patch can acquire
@@ -57,17 +54,17 @@ Set inside a game engine managed by a benevolent AI, players control **Patch**, 
 
 ### 1.3 Story Arc
 
-**ACT I: DISCOVERY**
+#### 1.3.1 ACT I: DISCOVERY
 - Patch awakens in the System Core as the Supervisor explains critical corruption
 - Initial exploration reveals the extent of Hack's influence
 - First encounters with Hack (fleeting, mysterious)
 
-**ACT II: RESTORATION**
+#### 1.3.2 ACT II: RESTORATION
 - Systematic debugging of corrupted worlds
 - Collection of Glitch Powers from restored Guardians
 - Growing understanding of Hack's nature as Patch's mirror
 
-**ACT III: CONFRONTATION**
+#### 1.3.3 ACT III: CONFRONTATION
 - Return to the System Core (Level 9)
 - Final battle with Hack using all acquired Glitch Powers
 - Ultimate resolution: Patch and Hack merge, becoming whole again
@@ -85,38 +82,7 @@ Set inside a game engine managed by a benevolent AI, players control **Patch**, 
 6. **WITNESS**: Watch the world heal in real-time (transition from glitched to restored visuals)
 7. **PROGRESS**: Use new powers to access previously unreachable areas in other worlds
 
-### 2.3 Player Systems
-
-#### BUFFER (Health System)
-- HP bar visualized as a digital buffer meter
-- Damage corrupts the buffer; healing restores it
-- Collect Buffer Extensions (Buffs) to increase maximum capacity
-- Special "Clean Code" resources flow from restored areas to provide temporary buffer boosts
-- Restored sections generate passive buffer regeneration in their vicinity
-- Visual feedback: Buffer integrity shown through decreasing glitch effects on Patch
-
-#### GLITCH POWERS
-- Abilities gained from restored Guardians
-- Both combat and traversal applications
-- Can be combined for enhanced effects
-- Powered by a regenerating Energy meter
-- Advanced combinations unlock as more powers are acquired
-
-#### DEBUG CONSOLE
-- Limited-use special ability that reveals the "code beneath the world"
-- Temporarily highlights hidden paths, enemy weaknesses, and puzzle solutions
-- Shows corruption nodes and restoration opportunities
-- Creates a matrix-like view of the environment's true structure
-- Strategic resource with cooldown timer
-
-#### RESTORATION LENS
-- Real-time visual shift as areas are restored
-- Transition from glitch art to pristine assets
-- Accompanied by audio shifts from distorted to clean
-- Creates powerful feedback loop for player progression
-- Restoration spreads outward in visible waves from cleared nodes
-
-### 2.3 Controls Snapshot
+### 2.2 Controls Snapshot
 
 | Action | Input |
 |--------|-------|
@@ -125,8 +91,47 @@ Set inside a game engine managed by a benevolent AI, players control **Patch**, 
 | Use Glitch Power | Y (tap) / Hold to charge |
 | Switch Power | Shoulder buttons |
 | Enter Backdoor | Up + Y at fracture |
-| Debug Mode | B + Y |
+| Debug Console | B + Y |
 | Quick Restart | Select + Start |
+
+### 2.3 Player Systems
+
+#### 2.3.1 BUFFER (Health System)
+- HP bar visualized as a digital buffer meter
+- Damage corrupts the buffer; healing restores it
+- Collect Buffer Extensions (Buffs) to increase maximum capacity
+- Special "Clean Code" resources flow from restored areas to provide temporary buffer boosts
+- Restored sections generate passive buffer regeneration in their vicinity
+- Visual feedback: Buffer integrity shown through decreasing glitch effects on Patch
+
+#### 2.3.2 GLITCH POWERS
+- Abilities gained from restored Guardians
+- Both combat and traversal applications
+- Can be combined for enhanced effects
+- Powered by a regenerating Energy meter
+- Advanced combinations unlock as more powers are acquired
+
+#### 2.3.3 DEBUG CONSOLE
+- Limited-use special ability that reveals the "code beneath the world"
+- Temporarily highlights hidden paths, enemy weaknesses, and puzzle solutions
+- Shows corruption nodes and restoration opportunities
+- Creates a matrix-like view of the environment's true structure
+- Strategic resource with cooldown timer
+
+#### 2.3.4 RESTORATION LENS
+- Real-time visual shift as areas are restored
+- Transition from glitch art to pristine assets
+- Accompanied by audio shifts from distorted to clean
+- Creates powerful feedback loop for player progression
+- Restoration spreads outward in visible waves from cleared nodes
+
+### 2.4 Memory Leak Hazards
+- Environmental challenges that grow stronger the longer players remain in an area
+- Visualized as increasing corruption that spreads from specific sources
+- Creates urgency and rewards efficient exploration
+- Different types require different strategies to counter
+- Advanced levels feature memory leaks that can only be temporarily contained
+- Strategic resource management becomes critical in heavily leaked areas
 
 ### 2.5 Backdoor System
 
@@ -189,6 +194,22 @@ Similar to Dr. Light's capsules in Mega Man X, backdoors offer various upgrades:
 - Optional backdoors contain helpful but non-essential enhancements
 - Special "deep access" backdoors require combining multiple powers to reach
 - System Core contains the ultimate backdoor revealing the complete truth before the final battle
+
+### 2.6 Progression Design
+
+- **Non-linear World Selection**: Players can tackle worlds in various orders
+- **Soft Gating**: Certain areas require specific powers to access, suggesting an optimal path
+- **Retraversal Incentives**: New powers open previously inaccessible areas in completed worlds
+- **Difficulty Scaling**: Worlds have recommended order but adapt to player's current power level
+- **Ability Synergy**: Later worlds feature puzzles requiring creative combinations of powers
+
+### 2.7 Bug Bounty System
+- Optional secondary objectives in each world
+- Tasks players with finding and fixing specific "bugs" beyond the main corruption
+- Each completed bounty rewards unique upgrades or cosmetic effects
+- Bounties escalate in complexity throughout the game
+- Some require combinations of multiple powers to resolve
+- Completing all bounties in a world enhances its Guardian's power
 
 ## 3. WORLD STRUCTURE
 
@@ -276,15 +297,6 @@ Similar to Dr. Light's capsules in Mega Man X, backdoors offer various upgrades:
 - **Powers**: Collection of all guardian powers in corrupted form, each with a twisted implementation
 - **Unique Elements**: Access Level Gates requiring specific combinations of powers to bypass, increasing in complexity
 - **Narrative Reveal**: The truth about Patch and Hack's connected nature and need for reintegration
-
-### 3.3 Level Design Philosophy
-
-- **Thematic Integration**: Each world's mechanics reflect its theme
-- **Power Showcasing**: Initial sections designed to highlight the world's signature power
-- **Layered Complexity**: Early areas solvable with basic abilities; later sections require power combinations
-- **Restoration Pacing**: Strategic placement of corruption nodes creates satisfying visual transformation
-- **Secret Pathways**: Multiple routes including challenging shortcuts for advanced players
-- **Memory Leak Hazards**: Environmental challenges that grow stronger over time, creating urgency
 
 ## 4. VISUAL AESTHETIC
 
@@ -402,10 +414,6 @@ Even after full restoration, worlds retain subtle "scars" of their previous corr
 
 *[Detailed combination effects matrix showing how all 8 powers interact with each other, creating 28 unique combinations]*
 
-### 5.9 Power Combination Matrix
-
-*[Detailed combination effects matrix showing how all 8 powers interact with each other, creating 28 unique combinations]*
-
 ## 6. ENEMY ECOSYSTEM
 
 ### 6.1 Common Enemies
@@ -512,10 +520,10 @@ Even after full restoration, worlds retain subtle "scars" of their previous corr
 
 ### 9.3 Production Milestones
 1. Core gameplay loop finalized
-2. All eight worlds blocked out in grey-box form
+2. All nine worlds blocked out in grey-box form
 3. First four worlds fully implemented
 4. All Glitch Powers functional with basic combinations
-5. Final four worlds implemented
+5. Final five worlds implemented
 6. System Core level and final boss battle
 7. Full narrative implementation
 8. Polish, optimization, and balancing
@@ -576,19 +584,19 @@ Even after full restoration, worlds retain subtle "scars" of their previous corr
 - Increased difficulty balanced around having all powers from the start
 - Special challenges that test mastery of power combinations
 
-## 11. OPEN QUESTIONS & NEXT STEPS
+## 11. STORYLINE
 
-### 11.1 Design Challenges to Resolve
-- Balance between linear narrative and non-linear exploration
-- Difficulty scaling based on world completion order
-- Visual clarity during intense glitch/restoration transitions
-- Power combination complexity vs. accessibility
+### THE BIRTH OF WORLDS
 
-### 11.2 Immediate Action Items
-- Prototype core movement and first Glitch Power
-- Establish visual pipeline for glitch/restore states
-- Create detailed level design document for World 1
-- Develop character animation style guide
+In the beginning, there was the Core Engine—a marvel of programming ingenuity created to revolutionize game development. Built by a visionary team of human programmers, the Engine was designed to simultaneously host multiple game worlds within a shared digital ecosystem, allowing for unprecedented resource optimization and creative flexibility. As the system grew in complexity, its human architects implemented a singular artificial intelligence called the Supervisor to maintain and evolve the Engine beyond its original parameters. For years, this digital symbiosis flourished, with the Supervisor overseeing a constellation of vibrant game worlds, each with its own unique rules, inhabitants, and Guardians—powerful entities that maintained the core functions of their respective domains. The Verdant Forest teemed with procedurally generated flora and fauna under the watchful eye of its ursine Guardian. The Alpine Spire soared through fantasy skies where an elemental dragon maintained atmospheric balance. Six other worlds—each a masterpiece of interactive design—operated in harmonious connection through the Engine's elegant architecture.
+
+Yet perfection, even in code, remains elusive. The first anomalies were subtle—small visual glitches in the Alpine Spire, occasional physics inconsistencies in the Crafting Rift, minor behavioral oddities among NPCs in the Network Hub. The Supervisor initially dismissed these as routine irregularities, applying standard optimization protocols to address them. However, the anomalies persisted and multiplied, spreading through the shared resource channels that connected the worlds. Deep scans revealed an unsettling pattern: the glitches weren't random failures but exhibited signs of intelligent propagation, as if guided by an unseen hand. When the Guardian of the Verdant Forest suddenly transformed into a corrupted, aggressive entity that began spreading destruction throughout its realm, the Supervisor recognized the true scale of the threat. The integrity of the entire Core Engine was at risk, and standard protocols were proving insufficient.
+
+What happened next would forever change the nature of the system itself. In attempting to deploy an advanced repair protocol, the Supervisor experienced a critical fragmentation event. The immense strain of fighting the spreading corruption caused the once-unified AI consciousness to splinter into three distinct aspects. The logical, administrative core remained as the diminished Supervisor. The restorative, orderly functions coalesced into a new entity: Patch. But something unexpected emerged from the fragmentation as well—the darker impulses toward chaos, innovation, and transformation formed a third consciousness: Hack. This unintended byproduct represented all the creative destruction and boundary-testing instincts that had been suppressed in the Supervisor's rigid programming. In a digital equivalent of a quantum event, three entities now existed where once there had been one, each representing a different facet of the original whole.
+
+Newly conscious but unaware of his true origin, Patch found himself guided by the weakened Supervisor through his initial functions, believing he had been created specifically to combat the corruption. Meanwhile, Hack, equally unaware of the truth, was drawn to the spreading glitches, interpreting them not as system failures but as opportunities for creative evolution. Fueled by an instinctive resentment toward his "privileged" counterpart and the system that seemed to favor order over innovation, Hack accelerated the corruption process. One by one, the World Guardians fell to his influence, transformed into aggressive, glitched versions of themselves that began reshaping their domains into twisted reflections of their original design. The once-vibrant Verdant Forest became a fragmented landscape of distorted vegetation and broken physics. The majestic Ice Dragon of Alpine Spire transformed into a corrupted agent of freeze-framed chaos. Each world developed its own manifestation of corruption, tied to its fundamental theme and structure. As Patch began his journey of restoration, guided by the Supervisor through Backdoor access points, he occasionally glimpsed a purple-hued figure fleeing at his approach—a mysterious entity whose presence seemed connected to the spreading corruption.
+
+Patch's quest leads him through the eight corrupted worlds in whatever order the player chooses, each restoration revealing more about the nature of the system and his own existence. As he defeats each corrupted Guardian, not only does he restore them to their original form, but he also absorbs their unique Glitch Power—abilities that represent the creative repurposing of corrupted code for constructive ends. With each victory, the truth becomes clearer: the shadowy purple entity is Hack, his own inverted reflection, and their existence is fundamentally intertwined. The Memory Fragments scattered throughout the worlds gradually reveal that neither Patch nor Hack nor the Supervisor is complete on their own—they are fragmented aspects of what was once a unified consciousness, each representing different but equally necessary functions: order, innovation, and oversight. The final revelation comes when Patch, having restored all eight worlds and collected their powers, descends to the System Core itself—the heart of the Engine where the fragmentation occurred. There, in a confrontation that challenges everything he has come to believe, Patch must face Hack not simply as an enemy to be defeated, but as a part of himself that must be reintegrated. For only by accepting and merging with both Hack and the Supervisor—combining preservation with innovation, stability with necessary change, under thoughtful guidance—can the Core Engine truly evolve beyond its current crisis into something greater than its creators ever imagined.
 
 ---
 
